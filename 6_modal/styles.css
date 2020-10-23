@@ -228,7 +228,7 @@ Modal
   z-index: 10;
 }
 .modal-container {
-  background:  rgba(158, 167, 167);
+  background:   rgba(228, 149, 68);
   border-radius: var(--radius);
   width: 90vw;
   height: 30vh;
