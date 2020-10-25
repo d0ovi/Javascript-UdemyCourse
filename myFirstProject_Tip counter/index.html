@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tip calculator</title>
+
+  <!-- styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main>
+    <!-- Main container -->
+    <div class="container">
+      <h1>Insert bill price</h1>
+      <!-- Bill input -->
+      <input type="number" class="price" id="price">
+
+      <!-- prepered tip amount buttons -->
+      <div class="button-container">
+        <button class="btn 15" onclick="getInputValue();">Calculate bill with 15% tip</button>
+        <button class="btn 20" onclick="getInputValue();">Calculate bill with 20% tip</button>
+      </div>
+
+      <!-- custom % tip amount button -->
+      <div class="custom">
+        <button class="btn custom">Calculate bill with custom tip</button><br>
+
+        <!-- hided container for the % input  -->
+        <div class="custom-input">
+          <input type="number" class="custom-input" id="perc">
+          <button class="btn enter" onclick="getPercValue(); getInputValue();">Enter</button>
+        </div>
+      </div>
+
+      <!-- Result container -->
+      <div class="result_container">
+        <span id='text'></span><br>
+        <span id="value"></span>
+      </div>
+    </div>
+
+  </main>
+  <!-- javascript -->
+  <script src="app.js"></script>
+</body>
+
+</html>
