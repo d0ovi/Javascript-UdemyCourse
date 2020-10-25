@@ -1,4 +1,4 @@
-#### This is my first project based on the tutorials and what I learned from them. 
+#### This is my first project based on the first 7 tutorial projects and what I learned from them. 
 
 There were a few bugs on the way: 
 
