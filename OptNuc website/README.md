@@ -1,4 +1,4 @@
-###Not finished
+### Not finished
 
 A website project with design process on Figma and implementation in javascript.
 
