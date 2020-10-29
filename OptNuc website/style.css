@@ -202,10 +202,10 @@ nav{
 }
 
 .author {
-    position: absolute;
+    position: sticky;
     top:75%;
     left: 50%;
-    transform: translate(-240%, -60%);
+    transform: translate(100px, -200%);
     color: white;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     text-align: left;
@@ -213,8 +213,15 @@ nav{
 }
 
 .almonde{
-    color: var(--almond-light);
     background: radial-gradient(var(--almond-light), var(--almond-dark));
+}
+
+.cashewe{
+    background: radial-gradient(var(--cashew-light), var(--cashew-dark));
+}
+
+.pecane{
+    background: radial-gradient(var(--pecan-light), var(--pecan-dark));
 }
 
 .story, .butter {
@@ -256,10 +263,31 @@ nav{
 }
 
 @media ( max-width: 1024px ){
-    .pages{
+    .page{
         grid-template-columns: 5% 1fr 5%;
-        grid-template-rows: 2fr 1fr;
+        grid-template-rows: 1fr 0fr;
         align-items: center;
+    }
+    .hero {
+        grid-column: 2/3;
+        height: auto;
+    }
+    .hero img{
+        height: 500px;
+    }
+
+    .details {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        text-align: center;
+    
+    }
+
+    .details h1{
+        font-size: 42px;
+    }
+    .details h2{
+        font-size: 30px;
     }
 
 }
