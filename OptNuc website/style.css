@@ -239,7 +239,10 @@ nav{
     color: var(--grey-2);
 }
 .butter-gallery img {
-  height: 300px;
+    height: 300px;
+    padding-left: 50px;
+    width: 100%;
+	height: auto;
 }
 
 .story-description h3, .butter-description h3{
@@ -255,11 +258,6 @@ nav{
 .butter-description {
     width: 60%;
     text-align: justify;
-}
-
-.butter-gallery {
-   display: grid;
-   /* grid-template-columns: repeat(3,200px); */
 }
 
 @media ( max-width: 1024px ){
@@ -290,4 +288,54 @@ nav{
         font-size: 30px;
     }
 
+    .story-description, .butter-description{
+        width: 100%;
+    }
+    .story, .butter{
+        flex-direction: column;
+    }
+
+    .butter-gallery img{
+        display: block;  
+        /* ta display block tai reikėtų pasiaiškinti */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top:30px ;
+    }
+}
+
+@media (max-width: 768px){
+    .page{
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 1fr 0fr;
+        align-items: center;
+    }
+    .hero img{
+        height: 400px;
+    }
+    .details h1{
+        font-size: 32px;
+        
+    }
+    .details h2{
+        font-size: 24px;
+    }
+    .details{
+        grid-row: 2/3;
+    }
+
+    .butter-gallery img {
+        display: block;  
+        /* ta display block tai reikėtų pasiaiškinti */
+        /* margin: 0 0 0 0;
+        padding: 0 0 0 0; */
+        padding-left: 0px;
+        margin-top:30px ;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+
+    
 }
