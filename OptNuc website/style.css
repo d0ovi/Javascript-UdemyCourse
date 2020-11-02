@@ -38,6 +38,7 @@ body {
 }
 
 .portofolio {
+  overflow: hidden;
   color: var(--almond-light);
   background: radial-gradient(var(--almond-light), var(--almond-dark));
 }
@@ -166,7 +167,6 @@ nav {
 .hero:hover .model-left {
   transform: translate(0%, 0%);
 }
-
 
 .details {
   grid-column: 2/3;
